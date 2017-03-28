@@ -24,7 +24,7 @@ const paths = {
     path.join('src', 'server', '**', '*.html'),
     path.join('src', 'server', '*.html')
   ],
-  server: path.join('src', 'server', 'server.js')
+  server: path.join('src', 'server', './src/server/server')
 };
 
 const lrPort = 35729;
