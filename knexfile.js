@@ -3,7 +3,7 @@ const databaseName = 'Listings';
 module.exports = {
   development: {
     client: 'postgresql',
-    connection: `postgres://localhost:5432/${Listings}`,
+    connection: `postgres://localhost:5432/${databaseName}`,
     migrations: {
       directory: __dirname + '/src/server/db/migrations'
     },
@@ -13,7 +13,7 @@ module.exports = {
   },
   test: {
     client: 'postgresql',
-    connection: `postgres://localhost:5432/${Listings}_test`,
+    connection: `postgres://localhost:5432/${databaseName}_test`,
     migrations: {
       directory: __dirname + '/src/server/db/migrations'
     },
@@ -21,9 +21,9 @@ module.exports = {
       directory: __dirname + '/src/server/db/seeds'
     }
   },
-  production: {
+  pro: {
     client: 'postgresql',
-    connection: `postgres://localhost:5432/${Listings}`,
+    connection: `postgres://localhost:5432/${databaseName}`,
     migrations: {
       directory: __dirname + '/src/server/db/migrations'
     },
