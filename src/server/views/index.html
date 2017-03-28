@@ -1,0 +1,88 @@
+{% extends "_base.html" %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+
+<header>
+  <div class="title">
+    <h1>Real Estate LLC.</h1>
+  </div>
+</header>
+
+<nav>
+  <div class="topnav" id="myTopnav">
+    <a href="#findHome">Find A Home</a>
+    <a href="#listWithUs">List With Us</a>
+    <a href="#services">Our Services</a>
+    <a href="#aboutUs">About Us</a>
+  </div>
+</nav>
+
+<div class="slider w3-content w3-display-container">
+  <img class="mySlides" src="../css/images/house1.jpeg">
+  <img class="mySlides" src="../css/images/house2.jpg">
+  <img class="mySlides" src="../css/images/house3.jpeg">
+  <img class="mySlides" src="../css/images/house4.jpg">
+  <img class="mySlides" src="../css/images/house5.jpg">
+</div>
+
+<div id="findHome">
+  <h2>Find A Home</h2>
+  <div class="dropdown navB">
+    <a class="changeIterationThree"><i class="fa fa-th-large fa-3x" aria-hidden="true"></i></a>
+  </div>
+  <div class="dropdown navB">
+    <a class="changeIterationFive"><i class="fa fa-th fa-3x" aria-hidden="true"></i></a>
+  </div>
+  <div class="dropdown navB">
+    <button onclick="myFunction()" class="dropbtn">Search</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="lowToHigh">Low to High</a>
+      <a href="highToLow">High to Low</a>
+    </div>
+  </div>
+</div>
+
+<div id="container">
+  {% for home in homes %}
+  <section class="iteration">
+    <img class="thumbnail" src="{{home.image_url}}" alt="">
+    <h3 class='hoverName'>${{home.price}}</h3>
+    <div class="info">
+      <p>{{home.description}}</p>
+      <p>{{home.city}}</p>
+      <p>{{home.state}}</p>
+    </div>
+  </section>
+  {% endfor %}
+</div>
+
+<div id="listWithUs">
+  <h2>List With Us</h2>
+</div>
+<div>
+  <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+</div>
+
+<div id="services">
+  <h2>Our Services</h2>
+</div>
+
+<div id="aboutUs">
+  <h2>About Us</h2>
+</div>
+
+<div class="half">
+  <img class="realtorPhoto" src="../css/images/drew_scotts.jpeg">
+  <h2>Drew Scott</h2>
+  <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+</div>
+
+<div class="half">
+  <img class="realtorPhoto phil" src="../css/images/phil_bench.jpg">
+  <h2>Phil Dunphy</h2>
+  <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+</div>
+
+{% endblock %}
