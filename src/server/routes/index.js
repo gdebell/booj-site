@@ -20,7 +20,7 @@ router.get('/lowToHigh', function(req, res, next) {
     const renderObject = {};
     renderObject.homes = data;
     res.render('index', renderObject);
-  });
+  })
 });
 
 

@@ -21,8 +21,6 @@
     require('dotenv').config();
   }
 
-
-
   appConfig.init = function(app, express) {
 
     // *** view engine *** //

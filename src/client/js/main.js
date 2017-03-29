@@ -1,19 +1,9 @@
-$(document).on('click', '.sortHighToLow', function() {
-  $.ajax({
-    type: 'GET',
-    url: `/highToLow`
-  });
-});
-
-$(document).on('click', '.sortlowToHigh', function() {
-  $.ajax({
-    type: 'GET',
-    url: `/lowToHigh`
-  });
-});
-
-
 // this myFunction is the dropdown sorting menu
+
+function testingFunction() {
+  console.log('hey');
+}
+
 function myFunction() {
   document.getElementById('myDropdown').classList.toggle('show');
 }
@@ -36,6 +26,7 @@ $(document).ready(function() {
   $('.changeIterationThree').on('click', function() {
     $('.iteration').css('width', '33%');
     $('.info').show();
+    $('.hoverName').css("opacity", '1')
     $('.iteration').removeClass('noInfo')
   });
 
