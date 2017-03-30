@@ -58,6 +58,7 @@ h3 {
  }
 
 #mapArea {
+  padding-top: -10px;
   width: 40%;
   display: inline-block;
   margin-left: 50px;
