@@ -40,7 +40,7 @@ h3 {
 
 .list {
   width: 100%;
-  height: 500px;
+  height: 520px;
 }
 
 .mySlides {
@@ -54,15 +54,15 @@ h3 {
 
 #map {
    height: 400px;
-   width: 780px;
+   width: 750px;
    padding-top: 50px;
  }
 
 #mapArea {
   width: 40%;
   display: inline-block;
-  margin-top: 50px;
-  margin-left: 150px;
+  margin-top: 30px;
+  margin-left: 125px;
 }
 
 nav {
@@ -289,7 +289,7 @@ button {
   }
 
   h4 {
-    font-size: 12px;
+    font-size: 10px;
   }
 
 
