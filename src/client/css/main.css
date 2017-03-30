@@ -1,16 +1,72 @@
 body {
   padding: 20px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
-}
-
-
-body {
   width: 100%
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  clear: both;
+}
+
+header {
+  background-color: #f3f3f5;
+  padding: 2%;
+}
+
+#findHome, #aboutUs, #listWithUs, #services, #footer {
+  background-color: #f3f3f5;
+  padding: 1%;
+  height: 100px;
+  letter-spacing: 10px;
+  color: #666;
+}
+
+#footer {
+  background-color: #f3f3f5;
+  padding: 1%;
+  height: 200px;
+  letter-spacing: 10px;
+  color: #666;
+}
+
+.text {
+  width: 40%;
+  display: inline-block;
+}
+
+
+h3 {
+  font-family: 'Playfair Display SC', serif;
+}
+
+.list {
+  width: 100%;
+  height: 500px;
+}
+
+.mySlides {
+  width: 100%;
+  height: 1000px;
+}
+
+.slider {
+  height: 1050px;
+}
+
+#map {
+   height: 400px;
+   width: 780px;
+   padding-top: 50px;
+ }
+
+#mapArea {
+  width: 40%;
+  display: inline-block;
+  margin-top: 50px;
+  margin-left: 200px;
 }
 
 nav {
@@ -26,6 +82,16 @@ nav a {
   padding: 20px;
 }
 
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+.navB {
+  float:right;
+  margin-top: -50px;
+}
+
 button {
   width: 66px;
   height: 66px;
@@ -38,20 +104,10 @@ button {
   padding: .5rem;
 }
 
-.navB {
-  float:right;
-  margin-top: -50px;
-}
-
 .title {
   display: inline-block;
   letter-spacing: 20px;
   font-family: 'Cinzel', serif;
-}
-
-a {
-  text-decoration: none;
-  color: #666;
 }
 
 .thumbnail {
@@ -79,124 +135,67 @@ a {
   text-align: center;
 }
 
-header {
-  background-color: #f3f3f5;
-  padding: 2%;
-}
-
-#findHome, #aboutUs, #listWithUs, #services {
-  background-color: #f3f3f5;
-  padding: 1%;
-  height: 100px;
-  letter-spacing: 10px;
-  color: #666;
-}
-
-
 .info {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-h3 {
-  font-family: 'Playfair Display SC', serif;
-}
-
-#container {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 1rem;
-  clear: both;
-}
-
 .iteration {
-  box-sizing: border-box;
-  padding: 4rem;
+  padding: 8rem;
   width: 33%;
+  font-size: 18px;
 }
 
 .dropbtn {
-    background-color: transparent;
-    color: #666;
-    padding: auto;
-    cursor: pointer;
+  background-color: transparent;
+  color: #666;
+  padding: auto;
+  cursor: pointer;
 }
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 215px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-size: 12px;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
-
+.show {
+  display:block;
+}
 
 .hoverName {
   opacity: 1;
 }
 
-.mySlides {
-  width: 100%;
-  height: 1000px;
-}
-
-.slider {
-  height: 1050px;
-}
-
 @media screen and (max-width: 920px) {
-  h1 {
-    font-size: 1.5rem;
-  }
 
-  .title {
-    width: 50%;
-  }
-
-  .iteration {
-    padding: 2.5rem;
-    width: 50%;
-  }
 }
+
+
 
 @media screen and (max-width: 585px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-  header {
-    height: 220px;
-  }
-
-  nav {
-    width: 100%;
-  }
-
-  .navB {
-  }
-
-  .iteration {
-    padding: 2rem;
-    width: 100%;
-  }
+  body {
+    width: 580px;
 }

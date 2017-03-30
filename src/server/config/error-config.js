@@ -1,9 +1,7 @@
 (function (errorConfig) {
-
   'use strict';
 
   // *** error handling *** //
-
   errorConfig.init = function (app) {
 
     // catch 404 and forward to error handler
