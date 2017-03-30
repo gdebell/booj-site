@@ -24,7 +24,7 @@ exports.seed = function(knex, Promise) {
           city:'1726 S Humboldt St Denver',
           state:'CO',
           description:'5 beds 4 baths 4,070 sqft',
-          image_url:'../css/images/house1726.jpg'
+          image_url:'../css/images/house1726size.jpg'
         }),
         knex('home_listings').insert({
           price:3750000,
